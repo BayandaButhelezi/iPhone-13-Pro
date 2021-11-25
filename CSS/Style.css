@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.CONTAINER {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 35px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 35px;
+    cursor: pointer;
+    margin: 30px 0;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #111;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2 {
+    font-size: 54px;
+}
+
+.col-1 h3 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #707070;
+    margin: 5px 0 5px;
+}
+
+.col-1 p {
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+.col-1 h4 {
+    margin: 30px 0;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+button {
+    width: 140px;
+    border: none;
+    padding: 10px 12px;
+    outline: none;
+    color: whitesmoke;
+    background: #111;
+}
+
+.col-1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: #111;
+    position: absolute;
+    top: 8px;
+    left: -40px;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.iphone {
+    width: 25%;
+    margin-left: 120px;
+}
+
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #111;
+    border-radius: 20px 0 0 20px;
+    height: 110%;
+    width: 90%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: #111;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: whitesmoke;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menulist {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-1 {
+        flex-basis: 100%;
+    }
+    .col-1 h2 {
+        font-size: 35px;
+    }
+    .col-1 h3 {
+        font-size: 15px;
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .iphone {
+        width: 50%;
+    }
+    .color-box {
+        transform: translateX(75px);
+    }
+}
