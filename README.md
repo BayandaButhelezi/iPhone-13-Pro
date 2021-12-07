@@ -9,6 +9,8 @@
 - [Live](https://iphone13pro.netlify.app "Live View")
 
 ## Screenshots
+<img width="950" alt="iPhone 13 Pro" src="https://user-images.githubusercontent.com/77545474/144988180-565475ba-2c28-49cb-a542-a591808789e9.PNG">
+<img width="543" alt="mobile" src="https://user-images.githubusercontent.com/77545474/144988200-2372d8ff-4aa8-41a3-8d68-4f554a9dd5f0.PNG">
 
 
 Built wih:
